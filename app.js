@@ -37,8 +37,18 @@ function reverse(arr) {
   return reverseBtn;
 }
 
+// Maximum
+
+function maximum() {
+  return data.reduce((a,b) => a > b ? a : b)
+}
+// Minimum 
+function minimum() {
+  return data.reduce((a,b) => a < b ? a : b)
+}
+
 // Example
-const data = [25, 17, 40, 63, 25, 40, 54, 20, 90, 23];
+const data = [25, 4, 17, 40, 63, 25, 40, 54, 20, 90, 23];
 
 // Console Test
 console.log(`Data: ${data}`);
@@ -47,3 +57,5 @@ console.log(`Data: ${data.sort((a, b) => a - b)}`);
 console.log(`Median: ${median(data)}`);
 console.log(`Mode: ${mode(data)}`);
 console.log(`Reverse: ${reverse(data)}`);
+console.log(`Maximum: ${maximum(data)}`);
+console.log(`Minimum: ${minimum(data)}`);
